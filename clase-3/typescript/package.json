@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "ts-node-dev ./src/index2.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
