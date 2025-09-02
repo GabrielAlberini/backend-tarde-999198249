@@ -1,0 +1,96 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+nav {
+  padding: 10px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav span {
+  font-size: 14px;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+nav button:hover {
+  background: #555;
+}
+
+/* Main layout */
+main {
+  padding: 20px;
+}
+
+/* Products grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 15px;
+  margin: 8px 0;
+  color: #333;
+  height: 40px;
+  /* mantiene la altura si el título es largo */
+  overflow: hidden;
+}
+
+.product-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a7b2a;
+  margin-top: 5px;
+}
