@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-de-la-clase-4",
+  "version": "1.0.4",
+  "description": "Una simple demostración de como se crean los proyectos en node",
+  "keywords": [
+    "typescript",
+    "ts-node-dev",
+    "developer-backend",
+    "node"
+  ],
+  "license": "ISC",
+  "author": "gabrielalberini",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev ./src/argumentos.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
