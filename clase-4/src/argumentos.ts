@@ -33,7 +33,9 @@ console.log("-------------------------------------------------------")
 
 // "["1", "2", "3"]"
 // [1,2,3]
-const arrayDeNumeros = JSON.parse(process.argv[2])
+// const arrayDeNumeros = JSON.parse(process.argv[2])
 
-const arrayGenerada = separarParesImpares(arrayDeNumeros)
-console.log(arrayGenerada)
+// const arrayGenerada = separarParesImpares(arrayDeNumeros)
+
+
+export { separarParesImpares }

@@ -12,7 +12,7 @@
   "author": "gabrielalberini",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "ts-node-dev ./src/argumentos.ts"
+    "dev": "ts-node-dev --clear ./src/index.ts"
   },
   "devDependencies": {
     "ts-node-dev": "^2.0.0",

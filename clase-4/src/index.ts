@@ -1,4 +1,5 @@
 import { Arandela } from "./interfaces/mascotas"
+import { separarParesImpares } from "./argumentos"
 
 const sumar = (n1: number, n2: number) => {
   return n1 + n2
@@ -98,3 +99,4 @@ const sumarNumeros = (numeros: number[]) => {
 
 sumarNumeros([10, 100, 1000])
 
+console.log(separarParesImpares([1, 2, 3]))
