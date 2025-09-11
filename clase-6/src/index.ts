@@ -1,4 +1,13 @@
+import crypto from "node:crypto"
+import { encontrarUsuario } from "./utils/buscarUsuario";
 // uuid
+
+// solamente el sistema aceptara correos con terminación en
+// @gmail.com
+// @example.com
+// @hotmail.com
+
+// todos los correos electronicos que sean ingresados con otro dominio serán considerados spam y no lo registraremos en la db
 
 let usuarios = [
   {
@@ -33,9 +42,6 @@ let usuarios = [
   }
 ];
 
-// mostrarle a el cliente el array de usuarios cuando usa el parametro lista
-// input -> process -> output
-
 const argumentos = process.argv
 const accion = argumentos[2]
 
@@ -52,10 +58,10 @@ switch (accion) {
   case "buscarUsuario":
     if (!argumentos[3]) {
       console.log("Debes ingresar el nombre del usuario que deseas buscar")
+      break
     }
 
-    const usuarioEncontrado = usuarios.find((usuario) =>
-      usuario.nombre.toLowerCase() === argumentos[3].toLowerCase())
+    const usuarioEncontrado = encontrarUsuario(usuarios, argumentos)
 
     if (!usuarioEncontrado) {
       console.log("No se encuntra el usuario en nuestra base de datos")
@@ -71,25 +77,60 @@ switch (accion) {
       break
     }
 
-    usuarios = usuarios.filter((usuario) => usuario.email !== email)
-    console.log(usuarios)
+    const indice = usuarios.findIndex((usuario) => usuario.email === email)
 
-    // REVER !!
-    // if (usuarios.length < usuarios.length) {
-    //   console.log(usuarios)
-    // } else {
-    //   console.log("No existe el usuario en nuestra base de datos")
+    if (indice === -1) {
+      console.log("El usuario no se encuentra en nuestra base de datos")
+      break
+    }
+
+    const usuarioBorrado = usuarios.splice(indice, 1)
+    console.log(usuarioBorrado[0])
+    break;
+  case "agregarUsuario":
+    const nombre = argumentos[3]
+    const inputEmail = argumentos[4]
+
+    if (!nombre || !inputEmail) {
+      console.log("Debes ingresar los datos requeridos: nombre y email")
+      break
+    }
+
+    // sanitización de datos
+    // const emailsValidos = ["@gmail.com", "@hotmail.com"]
+    // if (inputEmail.endsWith("@")) {
     // }
 
+    const usuario = encontrarUsuario(usuarios, argumentos)
+
+    if (usuario) {
+      console.log("El usuario ya existe en nuestra base de datos")
+      break
+    }
+
+    const nuevoUsuario = {
+      id: crypto.randomUUID(),
+      nombre,
+      email: inputEmail
+    }
+
+    // guardarlo en mongodb 
+    usuarios.push(nuevoUsuario)
+
+    console.log(usuarios, "<- lista de usuarios actualizada")
     break;
   default:
     console.log("Comando invalido")
     break;
 }
 
-// caso de éxito -> borrar el usuario que contengo en la db
-// casos de no éxito ->
-// 1. que exista un nombre
-// 2. nombre no se repita
-// 3. que este seguro
-// 4. comunicarle que el usuario se borro o no
+// caso de exíto
+// agregarUsuario ✅
+// luis ✅
+// luis@example.com ✅
+
+// caso de no éxito
+// que tengamos la data necesario (nombre y email) ✅
+// validaciones de datos...
+// que no exista previamente ✅
+
