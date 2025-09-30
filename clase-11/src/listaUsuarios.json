@@ -1,0 +1,27 @@
+[
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "nombre": "Lucía",
+    "email": "lucia@example.com"
+  },
+  {
+    "id": "123e4567-e89beee-12d3-a456-426614174000",
+    "nombre": "Lucía",
+    "email": "luciabelen@example.com"
+  },
+  {
+    "id": "9b2f3e6a-8d4e-4a3f-9a2b-5f1a4e5d9c11",
+    "nombre": "Martín",
+    "email": "martin@example.com"
+  },
+  {
+    "id": "c9a64635-4b1c-4ef0-9c65-2a7b5f0c72aa",
+    "nombre": "Sofía",
+    "email": "a"
+  },
+  {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "nombre": "Valentina",
+    "email": "valentina@hotmail.com"
+  }
+]
