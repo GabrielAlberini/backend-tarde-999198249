@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop HP Pavilion 15",
+    "categoria": "Tecnología",
+    "precio": 850.00,
+    "stock": 12,
+    "descripcion": "Notebook con procesador Intel i5, 8GB RAM y SSD 512GB."
+  },
+  {
+    "id": 2,
+    "nombre": "Auriculares Sony WH-1000XM4",
+    "categoria": "Audio",
+    "precio": 320.00,
+    "stock": 25,
+    "descripcion": "Auriculares inalámbricos con cancelación activa de ruido."
+  },
+  {
+    "id": 3,
+    "nombre": "Cafetera Nespresso Essenza Mini",
+    "categoria": "Electrodomésticos",
+    "precio": 120.00,
+    "stock": 8,
+    "descripcion": "Cafetera compacta con sistema de cápsulas."
+  },
+  {
+    "id": 4,
+    "nombre": "Silla Gamer Redragon Saturn",
+    "categoria": "Muebles",
+    "precio": 210.00,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  }
+]
