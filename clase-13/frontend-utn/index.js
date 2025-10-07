@@ -37,7 +37,6 @@ const renderProducts = (productos) => {
     card.addEventListener("click", async () => {
       const id = card.dataset.id;
       const res = await fetch(`http://localhost:3000/productos/${id}`);
-      console.log(`http://localhost:3000/productos/${id}`, "<- ruta hacia el back")
       const producto = await res.json();
       console.log(producto)
       showPopup(producto);
