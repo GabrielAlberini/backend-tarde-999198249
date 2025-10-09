@@ -5,9 +5,15 @@ meta {
 }
 
 patch {
-  url: http://localhost:3000/productos/1
-  body: none
+  url: http://localhost:3000/productos/6
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "precio": 123
+  }
 }
 
 settings {

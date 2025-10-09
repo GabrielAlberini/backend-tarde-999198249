@@ -5,9 +5,15 @@ meta {
 }
 
 delete {
-  url: http://localhost:3000/productos/2
-  body: none
+  url: http://localhost:3000/productos/1
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "id": 1
+  }
 }
 
 settings {
