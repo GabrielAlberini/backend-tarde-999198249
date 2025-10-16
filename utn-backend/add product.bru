@@ -5,21 +5,22 @@ meta {
 }
 
 post {
-  url: http://localhost:3000/productos
+  url: http://localhost:3000/products
   body: json
   auth: inherit
 }
 
 body:json {
     {
-      "nombre": "a",
-      "categoria": "Muebles",
-      "precio": 10000000000,
-      "stock": 15,
-      "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+      "name": "Celular",
+      "category": "Electrónica",
+      "price": 800000,
+      "stock": 2000,
+      "description": "Es un muy buen celular."
     }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

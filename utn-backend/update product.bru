@@ -5,17 +5,19 @@ meta {
 }
 
 patch {
-  url: http://localhost:3000/productos/9
+  url: http://localhost:3000/products/68f13811e43a6cc3e653666c
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "stock": "222"
+    "name": "CAMBIO DE NOMBRE 4",
+    "stock": 12
   }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
