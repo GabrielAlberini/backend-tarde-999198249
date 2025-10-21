@@ -6,10 +6,15 @@ meta {
 
 get {
   url: http://localhost:3000/products
-  body: none
-  auth: inherit
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjdkM2QzMTA2NGFjMTI0OTY5OGE0ZCIsImlhdCI6MTc2MTA3NDkzNiwiZXhwIjoxNzYxMDc4NTM2fQ.8ZvlrN15rnwQzAENsWuFJCjVvD95qNAPcSVMluZRZJQ
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
