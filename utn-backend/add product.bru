@@ -7,12 +7,16 @@ meta {
 post {
   url: http://localhost:3000/products
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjdkM2QzMTA2NGFjMTI0OTY5OGE0ZCIsImlhdCI6MTc2MTA3NzY5OCwiZXhwIjoxNzYxMDgxMjk4fQ.pi0VgP8gykY_98JVB15mTbXzpS4SW2xD0BzmWNVQjus
 }
 
 body:json {
   {
-   "name": "Palo de amasar 2",
+   "name": "Palo de amasar 4",
     "description": "Realizado en palo santo, proveniente de Cordoba",
     "stock": 100,
     "category": "Cocina",
