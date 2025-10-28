@@ -1,0 +1,146 @@
+[
+  {
+    "id": 4,
+    "nombre": "Silla Gamer Redragon Saturn",
+    "categoria": "Muebles",
+    "precio": 210,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 5,
+    "nombre": "Silla Gamer 2 Redragon Saturn",
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 6,
+    "nombre": "Pepe",
+    "categoria": "Muebles",
+    "precio": 123,
+    "stock": 1,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 7,
+    "nombre": true,
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 8,
+    "nombre": "Pepe",
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 9,
+    "nombre": "Silla Gamer 2 Redragon Saturn",
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": "222",
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 10,
+    "nombre": "Silla Gamer 2 Redragon Saturn",
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  },
+  {
+    "id": 8,
+    "nombre": "Compu",
+    "precio": "1",
+    "descripcion": "Una compu",
+    "categoria": "electronica",
+    "stock": "1"
+  },
+  {
+    "id": 9,
+    "nombre": "asdasdasd",
+    "precio": "123123",
+    "descripcion": "1sdasdasd",
+    "categoria": "asdasdasd",
+    "stock": "123123123"
+  },
+  {
+    "id": 10,
+    "nombre": "asdasda",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 11,
+    "nombre": "hola!",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 12,
+    "nombre": "hola!",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 13,
+    "nombre": "12312312313",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 14,
+    "nombre": "12312312313",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 15,
+    "nombre": "12312312313",
+    "precio": "12312",
+    "descripcion": "123",
+    "categoria": "asdasd",
+    "stock": "23"
+  },
+  {
+    "id": 16,
+    "nombre": "123123",
+    "precio": "1",
+    "descripcion": "hola",
+    "categoria": "aaa",
+    "stock": "1"
+  },
+  {
+    "id": 17,
+    "nombre": "123123",
+    "precio": "1",
+    "descripcion": "hola",
+    "categoria": "aaa",
+    "stock": "1"
+  },
+  {
+    "id": 18,
+    "nombre": "a",
+    "categoria": "Muebles",
+    "precio": 10000000000,
+    "stock": 15,
+    "descripcion": "Silla ergonómica reclinable con apoyabrazos 3D."
+  }
+]
