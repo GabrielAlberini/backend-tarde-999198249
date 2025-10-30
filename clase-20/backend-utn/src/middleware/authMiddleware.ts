@@ -6,7 +6,7 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const header = req.headers.authorization
 
   if (!header) {
-    return res.status(401).json({ error: "El token es requerido" })
+    return res.status(401).json({ succes: false, error: "El token es requerido" })
   }
 
   const token = header.split(" ")[1]
@@ -20,7 +20,7 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
     next()
   } catch (e) {
     const error = e as Error
-    res.status(401).json({ error: error.message })
+    res.status(401).json({ succes: false, error: error.message })
   }
 }
 
