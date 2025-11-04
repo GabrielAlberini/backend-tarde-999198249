@@ -3,7 +3,7 @@ import { verify } from "jsonwebtoken"
 import IUserTokenPayload from "../interfaces/IUserTokenPayload"
 
 const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
-  const SECRET_KEY = process.env.JWT_SECRET
+  const SECRET_KEY = process.env.JWT_SECRET!
   const header = req.headers.authorization
 
   if (!header) {

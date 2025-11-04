@@ -1,7 +1,7 @@
 import { connect } from "mongoose"
 
 const connectDB = async () => {
-  const URI_DB = process.env.URI_DB
+  const URI_DB = process.env.URI_DB!
   try {
     await connect(URI_DB)
     console.log("✅ Conectado a Mongo DB con éxito!")

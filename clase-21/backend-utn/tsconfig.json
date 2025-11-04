@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
+    "target": "ES2020", // Moderno y compatible con Node 16+
+    "module": "commonjs", // Ideal para proyectos con Express
     "rootDir": "./src",
-    "esModuleInterop": true
-  }
+    "outDir": "./dist",
+    "esModuleInterop": true, // Permite importar módulos CommonJS fácilmente
+    "strict": true, // Activa las validaciones más importantes
+    "noImplicitAny": true, // No permite variables sin tipo
+    "noUnusedLocals": true, // Detecta variables locales sin usar
+    "resolveJsonModule": true // Permite importar archivos .json
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

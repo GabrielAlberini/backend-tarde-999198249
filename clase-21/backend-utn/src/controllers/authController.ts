@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
 dotenv.config()
 
-const SECRET_KEY = process.env.JWT_SECRET
+const SECRET_KEY = process.env.JWT_SECRET!
 
 class AuthController {
   static register = async (req: Request, res: Response): Promise<void | Response> => {
