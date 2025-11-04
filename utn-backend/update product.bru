@@ -5,14 +5,18 @@ meta {
 }
 
 patch {
-  url: http://localhost:3000/products/68f7d1f11064ac1249698a47
+  url: http://localhost:3000/products/68fa441f6acca30942c88805
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDNiMjhmMzZlYWE0ZTg1Njc0MWExZiIsImlhdCI6MTc2MTg1MDA0OCwiZXhwIjoxNzYxODUzNjQ4fQ.aEY89whJNyxzhtq4hBn70wmdr9Y0_8pAaml9wnilehc
 }
 
 body:json {
   {
-    "stock": 88
+    "price": 1
   }
 }
 
